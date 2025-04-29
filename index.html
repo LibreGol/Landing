@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LibreGol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #0a1a2f, #000);
+            color: #fff;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .logo {
+            margin-top: 40px;
+        }
+
+        .logo img {
+            width: 120px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            margin: 10px 0 30px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #1da1f2;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 350px;
+            margin: 0 auto 40px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            background: #1e90ff;
+            border-radius: 50px;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background: #0c70d4;
+        }
+
+        .features {
+            margin: 40px 0;
+        }
+
+        .features h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .features p {
+            color: #bbb;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            margin-bottom: 25px;
+        }
+
+        .feature-item i {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #1e90ff;
+        }
+
+
+
+        .final-section {
+            background: linear-gradient(to right, #001f3f, #003366);
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-radius: 20px;
+        }
+
+        .final-section h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .final-section p {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .final-section .download-btn {
+            background: #ff4757;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .final-section .download-btn:hover {
+            background: #e84141;
+        }
+        .carousel-container {
+            position: relative;
+            width: 90%;
+            max-width: 500px;
+                        height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="https://i.imgur.com/PbTVKkI.png" alt="LibreGol Logo" />
+        <h1>LibreGol</h1>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a class="button" href="#"><i class="fab fa-tiktok"></i> Tik Tok</a>
+
+        <a class="button" href="#"><i class="fas fa-users"></i> Comunidad</a>
+        <a class="button" href="https://github.com/LibreGol/Apk/releases/download/v1.1/LibreGol.apk"><i class="fas fa-download"></i> Descargar App</a>
+    </div>
+
+    <div class="features">
+        <h2>Características</h2>
+        <p>Descubre todo lo que LibreGol tiene para ofrecerte:</p>
+
+        <div class="feature-item">
+            <i class="fas fa-tv"></i>
+            <div>Transmisiones en vivo</div>
+        </div>
+
+        <div class="feature-item">
+            <i class="fas fa-calendar-check"></i>
+            <div>Calendario actualizado</div>
+        </div>
+
+        <div class="feature-item">
+            <i class="fas fa-users"></i>
+            <div>Comunidad en Telegram</div>
+        </div>
+    </div>
+
+    <div class="screenshots">
+        <h2>Capturas de Pantalla</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="https://i.imgur.com/pO3stzO.png" alt="Screenshot 1" />
+                <img src="https://i.imgur.com/SUMKECS.png" alt="Screenshot 2" />
+                <img src="https://i.imgur.com/IAtrtA8.png" alt="Screenshot 4" />
+                 <img src="https://i.imgur.com/BnYP17z.png" alt="Screenshot 4" />
+                <img src="https://i.imgur.com/YYOjkOR.png" alt="Screenshot 5" />
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="final-section">
+        <h3>¡Descarga LibreGol!</h3>
+        <p>No te pierdas ningún partido de tus equipos favoritos.</p>
+        <a class="download-btn" href="https://github.com/LibreGol/Apk/releases/download/v1.1/LibreGol.apk">Descargar Ahora</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.carousel img');  // Selector más específico
+            const totalImages = images.length;
+            const carousel = document.querySelector('.carousel'); // Elemento a transformar
+
+            function moveSlide(step) {
+                currentIndex += step;
+                if (currentIndex < 0) {
+                    currentIndex = totalImages - 1;
+                } else if (currentIndex >= totalImages) {
+                    currentIndex = 0;
+                }
+                const offset = -currentIndex * 100;
+                carousel.style.transform = `translateX(${offset}%)`;
+            }
+
+            let startX;
+            const carouselContainer = document.querySelector('.carousel-container');
+            carouselContainer.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+            });
+
+            carouselContainer.addEventListener('touchmove', (e) => {
+                if (!startX) return;
+                let moveX = e.touches[0].clientX - startX;
+                if (moveX > 50) {
+                    moveSlide(-1);
+                    startX = null;
+                } else if (moveX < -50) {
+                    moveSlide(1);
+                    startX = null;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
